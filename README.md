@@ -1,49 +1,62 @@
-🎓 Course Registration System DSA Project
+# 🎓 Course Registration System DSA Project
 
-A robust Command-Line Interface (CLI) based application developed in C++ to simulate a real-world university course registration system.
-This project applies advanced Data Structures and Algorithms (DSA) to efficiently manage student enrollments, prerequisites, and GPA-based waitlists.
+A comprehensive console-based application designed to simulate a real-world university course enrollment system.
 
-🚀 Key Features
-👨‍🎓 Student Management
-Register students with validated IDs, names, and departments
-Search students by ID or department
-Update student GPA
-📚 Course Management
-Add courses with defined capacity limits
-Assign prerequisites to courses
-🔄 Cycle Detection
-Prevents circular dependencies in prerequisites
-Uses recursive logic to ensure valid course structures
-📊 GPA-Priority Waitlist
-Automatically activates when course capacity is full
-Uses a Max Heap to prioritize students with higher GPA
-↩️ Undo / Redo Functionality
-Tracks enrollment and drop actions
-Stack-based implementation for rollback operations
-💾 Data Persistence
-Binary files for efficient storage
-Text files for logs and auditing
-🛠 Technical Architecture
+This project demonstrates the practical application of **Data Structures and Algorithms (DSA)** for handling complex operations like prerequisite validation, waitlist prioritization, and efficient data management.
 
-This system is built using the following data structures:
+## 🚀 Features
 
-AVL Trees
-Maintains balanced course records
-Supports LL, RR, LR, RL rotations
-Max Heaps
-Manages waitlists with GPA priority
-Stacks
-Enables Undo/Redo functionality
-Linked Lists
-Stores and manages student records efficiently
-👥 Contributors
-Member	Responsibilities
-Noor Fatima (Leader)	Core structures, file handling, prerequisite logic, cycle detection, debugging
-Adnan Haider	AVL tree implementation, stack-based undo/redo, CLI system
-Areeba Kanwal	Add/drop logic, heap-based waitlist, capacity management
-Musfirah Imran	Student registration, search features, GPA updates
-📈 Future Enhancements
-GUI-based interface
-Role-based access (Admin / Student)
-Automatic schedule conflict detection
-CSV import/export support
+### 1. Student & Course Management
+* **Student Registration:** Add students with validated IDs, names, departments, and GPA.
+* **Search Functionality:** Retrieve students by ID or department.
+* **Course Creation:** Add courses with defined capacity limits.
+* **Prerequisite Assignment:** Link courses with dependency requirements.
+
+### 2. Enrollment Logic & Validation
+* **Smart Enrollment System:** Handles add/drop operations efficiently.
+* **Prerequisite Enforcement:** Ensures students meet course requirements before enrollment.
+* **Cycle Detection:** Prevents invalid circular dependencies using recursive graph logic.
+
+### 3. Waitlist & Priority Handling
+* **GPA-Based Waitlist:** Automatically activates when course capacity is full.
+* **Max-Heap Implementation:** Ensures highest GPA students get priority enrollment.
+
+### 4. Action Tracking (Undo/Redo)
+* **Undo Operations:** Revert last enrollment or drop action.
+* **Redo Operations:** Reapply reverted actions.
+* **Stack-Based Tracking:** Maintains action history efficiently.
+
+### 5. Data Persistence
+* **Binary File Storage:** Efficient saving/loading of system data.
+* **Text File Logs:** Maintains readable records for auditing.
+
+## 🛠 Technical Stack
+
+* **Language:** C++
+* **Core Focus:** Data Structures & Algorithms
+* **Data Structures Used:**
+    * **AVL Trees:** Balanced course storage for $O(\log n)$ search time.
+    * **Max-Heaps:** Priority waitlist management.
+    * **Stacks:** Undo/Redo system history tracking.
+    * **Linked Lists:** Student records and enrollment links.
+* **Concepts Applied:**
+    * Tree rotations (LL, RR, LR, RL)
+    * Heap operations (Insert, Extract-Max)
+    * Graph traversal (Cycle Detection)
+
+## 👥 Contributors
+
+* **Noor Fatima (Leader)** – Core structures, file handling, prerequisite logic, debugging
+* **Adnan Haider** – AVL tree implementation, undo/redo stacks, CLI system
+* **Areeba Kanwal** – Enrollment logic, heap-based waitlist, capacity handling
+* **Musfirah Imran** – Student management, search features, GPA updates
+
+## 📈 Future Improvements
+
+* **GUI-based system:** Transition to a desktop or web interface.
+* **Role-based access:** Separate dashboards for Admin and Student views.
+* **Automatic timetable conflict detection:** Prevent overlapping schedules.
+* **CSV import/export support:** For easier bulk data management.
+
+---
+**Developed for Semester Project – COMSATS University Islamabad**
